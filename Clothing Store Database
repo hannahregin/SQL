@@ -1,0 +1,20 @@
+CREATE TABLE clothing (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, price INTEGER, location INTEGER);
+
+INSERT INTO clothing VALUES (1, "shirts", 40, 20, 1);
+INSERT INTO clothing VALUES (2, "pants", 30, 40, 2);
+INSERT INTO clothing VALUES (3, "shorts", 20, 30, 2);
+INSERT INTO clothing VALUES (4, "tank tops", 20, 15, 1);
+INSERT INTO clothing VALUES (5, "shoes", 40, 50, 3);
+INSERT INTO clothing VALUES (6, "dresses", 25, 25, 4);
+INSERT INTO clothing VALUES (7, "bags", 15, 50, 5);
+INSERT INTO clothing VALUES (8, "belts", 10, 10, 1);
+INSERT INTO clothing VALUES (9, "glasses", 15, 20, 3);
+INSERT INTO clothing VALUES (10, "bathing suits", 20, 30, 5);
+INSERT INTO clothing VALUES (11, "undergarments", 40, 20, 6);
+INSERT INTO clothing VALUES (12, "hats", 30, 10, 6);
+INSERT INTO clothing VALUES (13, "jackets", 30, 60, 7);
+INSERT INTO clothing VALUES (14, "socks", 35, 5, 6);
+INSERT INTO clothing VALUES (15, "button ups", 20, 30, 1);
+
+SELECT * FROM clothing ORDER BY location; 
+SELECT SUM(quantity) FROM clothing;
